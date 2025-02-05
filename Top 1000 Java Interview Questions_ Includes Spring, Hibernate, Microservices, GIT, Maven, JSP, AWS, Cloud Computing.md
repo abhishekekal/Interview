@@ -5737,6 +5737,12 @@ Map collection has to provide methods like valueSet, keySet etc.
 These methods are specific to Map collection. Where as methods in
 Collection interface can be reused by a List, Set, Queue etc.
 
+The Map interface is extended by interfaces like:
+
+SortedMap
+NavigableMap
+ConcurrentMap
+
 
 ## 199. What are the different ways to
 
