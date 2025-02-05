@@ -4,27 +4,7 @@
 
 # Interview Question & Answers
 
-## Knowledge Powerhouse
 
-```
-Copyright © 2017 Knowledge Powerhouse
-```
-```
-All rights reserved.
-```
-No part of this book can be copied in any form. The publisher and the author have used good
-faith efforts to ensure that the information in this book is correct and accurate. The
-publisher and the author disclaim all responsibility for errors or omissions. Use of the
-information in this book is at your own risk.
-
-```
-http://www.KnowledgePowerhouse.com
-```
-## DEDICATION
-
-```
-To our readers!
-```
 
 ### CONTENTS
 
@@ -5777,6 +5757,20 @@ any additions, removals that happened to list after the Iterator was
 created.
 
 All elements including null are permitted in CopyOnWriteArrayList.
+ArrayList:- 
+1.Not thread-safe; must be manually synchronized in multi-threaded environments.
+2.Faster for single-threaded or write-heavy scenarios.
+3.Modifications happen directly on the underlying array.
+4.Iterators are fail-fast and throw ConcurrentModificationException if the collection is modified during iteration
+5.Less overhead since no copies are made during modifications.
+
+CopyOnWriteArrayList:- 
+1.Thread-safe; handles synchronization internally.
+2.Better for multi-threaded, read-heavy scenarios.
+3.Creates a new copy of the array for every modification.
+4.Iterators are fail-safe, as they iterate over a snapshot of the array.
+5.Higher overhead due to copying the array on every write operation
+6.Suitable for multi-threaded applications with frequent reads and infrequent writes.
 
 
 ## 201. How remove() method is
